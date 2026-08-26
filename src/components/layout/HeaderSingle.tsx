@@ -12,37 +12,35 @@ export function HeaderSingle() {
   const instagram = socialLinks.find((s) => s.icon === 'instagram') || socialLinks[0];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-black/10 dark:border-white/10 bg-white/70 dark:bg-gray-950/70 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-18 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md transition-colors">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand Left */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-violet-500/50 shadow-md group-hover:scale-105 transition-transform">
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="relative w-8 h-8 rounded-full overflow-hidden border border-gray-300 dark:border-gray-700">
             <Image
               src={siteConfig.logo}
               alt={siteConfig.name}
               fill
               className="object-cover"
-              sizes="36px"
+              sizes="32px"
               priority
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-extrabold text-base sm:text-lg tracking-tight text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
-              {siteConfig.name}
-            </span>
-          </div>
+          <span className="font-bold text-base sm:text-lg tracking-tight text-gray-900 dark:text-white">
+            {siteConfig.name}
+          </span>
         </Link>
 
-        {/* Quick Nav & Top Right Controls */}
-        <div className="flex items-center gap-3 sm:gap-4">
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
-            <a href="#highlights" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+        {/* Quick Nav & Right Controls */}
+        <div className="flex items-center gap-4 sm:gap-6">
+          <nav className="hidden sm:flex items-center gap-5 text-sm font-medium text-gray-600 dark:text-gray-400">
+            <a href="#highlights" className="hover:text-gray-900 dark:hover:text-white transition-colors">
               Highlights
             </a>
-            <a href="#proof-of-work" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+            <a href="#proof-of-work" className="hover:text-gray-900 dark:hover:text-white transition-colors">
               Proof Of Work
             </a>
-            <a href="#connect" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+            <a href="#connect" className="hover:text-gray-900 dark:hover:text-white transition-colors">
               Connect
             </a>
           </nav>
@@ -52,10 +50,10 @@ export function HeaderSingle() {
               href={instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 hover:border-pink-500/40 transition-all hidden xs:flex items-center justify-center"
+              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors p-1.5"
               aria-label="Instagram Profile"
             >
-              <SocialIcon name="instagram" size={17} />
+              <SocialIcon name="instagram" size={18} />
             </a>
           )}
 

@@ -13,11 +13,11 @@ export const events: Event[] = [
   {
     id: 'event-001',
     slug: 'metamask-community-builder-meetup-2026',
-    title: 'MetaMask Community Builder Meetup 🦊🧡',
+    title: 'MetaMask Community Builder Meetup',
     shortDescription:
-      'Organised by our team @mpdao__ & @thecodecrax in February 2026, bringing Web3 builders, wallet architects, and DeFi contributors together.',
+      'Organised by our team @mpdao__ & @thecodecrax in February 2026, bringing Web3 builders, wallet architects, and contributors together.',
     description:
-      'The MetaMask Community Builder Meetup was organised by our team @mpdao__ & @thecodecrax lately in February 2026 🦊🧡. We dove into Ethereum tooling, MetaMask Snaps development, Web3 security, and onboarding the next cohort of decentralized application developers across the region.',
+      'The MetaMask Community Builder Meetup was organised by our team @mpdao__ & @thecodecrax in February 2026. We focused on Ethereum tooling, MetaMask Snaps development, Web3 security, and onboarding developers to decentralized protocols.',
     date: '2026-02-15',
     location: {
       city: 'Jabalpur / MP',
@@ -35,7 +35,7 @@ export const events: Event[] = [
     registrationUrl: '',
     instagramPostUrl:
       'https://www.instagram.com/p/DbxgaQZDgpD/?utm_source=ig_web_button_share_sheet&igsi=MzRlODBiNWFlZA==',
-    audience: '85+ Web3 Developers & Students',
+    audience: '85+ Developers & Students',
     collaborators: [
       { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
       { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
@@ -47,11 +47,11 @@ export const events: Event[] = [
   {
     id: 'event-002',
     slug: 'story-protocol-data-foundation-meetup-2025',
-    title: 'Story Protocol & Data Foundation Meetup 🌐',
+    title: 'Story Protocol & Data Foundation Meetup',
     shortDescription:
-      'Lately in November 2025, our team @mpdao__ & @thecodecrax hosted a community meetup on Story Networking Protocol (rebranded into @datafdn on X).',
+      'In November 2025, @mpdao__ & @thecodecrax hosted a community meetup on Story Networking Protocol (rebranded to @datafdn).',
     description:
-      'Lately in November 2025, our team @mpdao__ & @thecodecrax hosted community meetup of Story Networking Protocol which is now rebranded into @datafdn on X. The session explored decentralized intellectual property, programmable IP graphs, data monetization, and scalable protocol infrastructure.',
+      'In November 2025, our team @mpdao__ & @thecodecrax hosted a community meetup on Story Networking Protocol (now @datafdn on X). The session explored programmable IP graphs, data monetization, and scalable protocol infrastructure.',
     date: '2025-11-20',
     location: {
       city: 'Jabalpur / MP',
@@ -68,7 +68,7 @@ export const events: Event[] = [
     registrationUrl: '',
     instagramPostUrl:
       'https://www.instagram.com/p/DbZNzwuEjEa/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==',
-    audience: '70+ Protocol Engineers & Builders',
+    audience: '70+ Protocol Engineers',
     collaborators: [
       { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
       { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
@@ -80,11 +80,11 @@ export const events: Event[] = [
   {
     id: 'event-003',
     slug: 'vercel-v0-zero-to-agents-workshop-2025',
-    title: 'Vercel — v0 Zero to Agents Workshop 👾⚡',
+    title: 'Vercel: v0 Zero to Agents Workshop',
     shortDescription:
-      'Hands-on technical workshop with @vercel exploring v0, prompt engineering, generative UI, and autonomous AI agents by @mpdao__ & co-host @thecodecrax.',
+      'Hands-on technical workshop with @vercel exploring v0, prompt engineering, generative UI, and autonomous AI agents by @mpdao__ & @thecodecrax.',
     description:
-      'April with @vercel - v0 Zero to Agents Workshop, by @mpdao__ & co-host @thecodecrax 👾⚡. Participants experienced real-time generative UI prototyping, LLM tool-calling orchestration, and deployed full-stack autonomous AI agent apps on Vercel.',
+      'April session with @vercel: v0 Zero to Agents Workshop, by @mpdao__ & co-host @thecodecrax. Covered generative UI prototyping, LLM orchestration, and full-stack AI deployment on Vercel.',
     date: '2025-04-18',
     location: {
       city: 'Bhopal / Jabalpur',
@@ -101,7 +101,7 @@ export const events: Event[] = [
     registrationUrl: '',
     instagramPostUrl:
       'https://www.instagram.com/p/DbVHEWokquJ/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==',
-    audience: '120+ AI Builders & Engineers',
+    audience: '120+ AI Builders',
     collaborators: [
       { name: 'Vercel', handle: '@vercel', url: 'https://vercel.com' },
       { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
