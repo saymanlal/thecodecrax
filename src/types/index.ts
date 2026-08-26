@@ -1,8 +1,8 @@
-// Event type
 export interface EventCollaborator {
   name: string;
   logo?: string;
   url?: string;
+  handle?: string;
 }
 
 export interface EventSpeaker {
@@ -33,14 +33,14 @@ export interface Event {
   tags: string[];
   eventUrl?: string;
   registrationUrl?: string;
-  instagramUrl?: string;
+  instagramPostUrl?: string;
+  audience?: string;
   collaborators?: EventCollaborator[];
   speakers?: EventSpeaker[];
   featured: boolean;
   published: boolean;
 }
 
-// Gallery type
 export interface GalleryImage {
   id: string;
   image: string;
@@ -54,126 +54,39 @@ export interface GalleryImage {
   category?: string;
 }
 
-// Team type
-export interface TeamMember {
-  id: string;
-  name: string;
-  role: string;
-  image: string;
-  bio: string;
-  socials: {
-    linkedin?: string;
-    twitter?: string;
-    instagram?: string;
-  };
-  active: boolean;
-}
-
-// Partner type
-export interface Partner {
-  id: string;
-  name: string;
-  logo: string;
-  website: string;
-  category: string;
-  active: boolean;
-}
-
-// Location type
-export interface CityLocation {
-  city: string;
-  state: string;
-  country: string;
-  coordinates: {
-    latitude: number;
-    longitude: number;
-  };
-  eventIds: string[];
-  active: boolean;
-}
-
-// Social link type
-export interface SocialLink {
-  name: string;
-  url: string;
-  icon: string;
-  enabled: boolean;
-}
-
-// Navigation type
-export interface NavLink {
-  label: string;
-  href: string;
-  enabled: boolean;
-}
-
-// Stat type
 export interface Stat {
   label: string;
-  value: string;
+  value: number;
+  suffix?: string;
   description?: string;
   enabled: boolean;
 }
 
-// Initiative type
-export interface Initiative {
-  id: string;
-  title: string;
-  description: string;
+export interface SocialLink {
+  name: string;
+  url: string;
+  handle?: string;
   icon: string;
-  link?: string;
   enabled: boolean;
-}
-
-// Site config types
-export interface CTAButton {
-  label: string;
-  href: string;
-}
-
-export interface HeroConfig {
-  headline: string;
-  subheadline: string;
-  description: string;
-  primaryCTA: CTAButton;
-  secondaryCTA: CTAButton;
-  backgroundImage?: string;
-}
-
-export interface AboutConfig {
-  headline: string;
-  subheadline: string;
-  body: string[];
-  values: { title: string; description: string }[];
 }
 
 export interface SiteConfig {
   name: string;
   tagline: string;
+  mission: [string, string, string]; // 3-line mission statement
   description: string;
   logo: string;
-  logoDark: string;
-  favicon: string;
-  hero: HeroConfig;
-  about: AboutConfig;
+  hero: {
+    primaryCTA: {
+      label: string;
+      href: string;
+    };
+    secondaryCTA: {
+      label: string;
+      href: string;
+    };
+  };
   contact: {
     email: string;
-    address?: string;
   };
-  maxFeaturedEvents: number;
-  showStats: boolean;
-  showTeam: boolean;
-  showPartners: boolean;
-}
-
-export interface SEOConfig {
-  title: string;
-  titleTemplate: string;
-  description: string;
-  keywords: string[];
-  ogImage: string;
-  twitterImage: string;
-  twitterHandle?: string;
-  siteUrl: string;
-  locale: string;
 }

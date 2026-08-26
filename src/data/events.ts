@@ -1,129 +1,181 @@
 import type { Event } from '@/types';
 
 /**
- * EVENTS DATA
+ * EVENTS & PROOF OF WORK DATA
  * ============================================================
- * HOW TO ADD AN EVENT:
- * 1. Copy one of the objects below.
- * 2. Give it a unique id (e.g., "event-004") and slug (e.g., "my-event-name").
- * 3. Fill in all fields.
- * 4. Set published: true to make it visible.
- * 5. Set featured: true to show it prominently on the homepage.
- *
- * HOW TO REMOVE AN EVENT:
- * Set published: false — it will not appear publicly.
- *
- * HOW TO ADD PHOTOS:
- * Place images in: public/images/events/[event-id]/
- * Reference them as: "/images/events/[event-id]/photo.jpg"
+ * Edit, add, or remove events here.
+ * Set featured: true to highlight in the top Highlights section.
+ * All fields like event links, Instagram post URLs, audience,
+ * collaborators, and photos can be changed directly in this file.
  * ============================================================
  */
 export const events: Event[] = [
   {
     id: 'event-001',
-    slug: 'ai-web3-meetup-jabalpur-2025',
-    title: 'AI & Web3 Meetup — Jabalpur',
+    slug: 'metamask-community-builder-meetup-2026',
+    title: 'MetaMask Community Builder Meetup 🦊🧡',
     shortDescription:
-      'An open meetup bringing AI and Web3 builders together in Jabalpur, Madhya Pradesh.',
+      'Organised by our team @mpdao__ & @thecodecrax in February 2026, bringing Web3 builders, wallet architects, and DeFi contributors together.',
     description:
-      'Our first community meetup in Jabalpur brought together students, developers, and curious minds to explore AI and Web3. The event featured talks, discussions, and hands-on sessions — all designed to make complex technology accessible and exciting for the local community.',
-    date: '2025-03-15',
+      'The MetaMask Community Builder Meetup was organised by our team @mpdao__ & @thecodecrax lately in February 2026 🦊🧡. We dove into Ethereum tooling, MetaMask Snaps development, Web3 security, and onboarding the next cohort of decentralized application developers across the region.',
+    date: '2026-02-15',
     location: {
-      city: 'Jabalpur',
+      city: 'Jabalpur / MP',
       state: 'Madhya Pradesh',
       country: 'India',
     },
-    category: ['AI', 'Web3', 'Meetup'],
+    category: ['Web3', 'MetaMask', 'Community'],
     coverImage: '/images/events/event-001/cover.jpg',
     gallery: [
       '/images/events/event-001/photo-1.jpg',
       '/images/events/event-001/photo-2.jpg',
     ],
-    tags: ['AI', 'Web3', 'Meetup', 'Jabalpur', 'Madhya Pradesh'],
-    eventUrl: 'https://instagram.com/thecodecrax',
+    tags: ['MetaMask', 'Ethereum', 'Web3', 'MPDAO', 'thecodecraX', 'Builders'],
+    eventUrl: 'https://www.instagram.com/p/DbxgaQZDgpD/',
     registrationUrl: '',
-    instagramUrl: 'https://instagram.com/thecodecrax',
-    collaborators: [],
-    speakers: [],
+    instagramPostUrl:
+      'https://www.instagram.com/p/DbxgaQZDgpD/?utm_source=ig_web_button_share_sheet&igsi=MzRlODBiNWFlZA==',
+    audience: '85+ Web3 Developers & Students',
+    collaborators: [
+      { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
+      { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
+      { name: 'MetaMask Community', handle: '@metamask', url: 'https://metamask.io' },
+    ],
     featured: true,
     published: true,
   },
   {
     id: 'event-002',
-    slug: 'web3-workshop-campus-2025',
-    title: 'Web3 Campus Workshop',
+    slug: 'story-protocol-data-foundation-meetup-2025',
+    title: 'Story Protocol & Data Foundation Meetup 🌐',
     shortDescription:
-      'A hands-on Web3 workshop for engineering students — covering wallets, smart contracts, and the decentralized web.',
+      'Lately in November 2025, our team @mpdao__ & @thecodecrax hosted a community meetup on Story Networking Protocol (rebranded into @datafdn on X).',
     description:
-      'This campus workshop introduced engineering students to Web3 fundamentals: blockchain basics, how wallets work, smart contracts, and real-world decentralized applications. Students got hands-on experience setting up wallets and interacting with testnet contracts.',
-    date: '2025-05-20',
+      'Lately in November 2025, our team @mpdao__ & @thecodecrax hosted community meetup of Story Networking Protocol which is now rebranded into @datafdn on X. The session explored decentralized intellectual property, programmable IP graphs, data monetization, and scalable protocol infrastructure.',
+    date: '2025-11-20',
     location: {
-      city: 'Jabalpur',
+      city: 'Jabalpur / MP',
       state: 'Madhya Pradesh',
       country: 'India',
     },
-    category: ['Web3', 'Workshop', 'Campus'],
+    category: ['Web3', 'Protocols', 'Story Protocol'],
     coverImage: '/images/events/event-002/cover.jpg',
     gallery: [
       '/images/events/event-002/photo-1.jpg',
-      '/images/events/event-002/photo-2.jpg',
     ],
-    tags: ['Web3', 'Workshop', 'Campus', 'Blockchain', 'Students'],
-    eventUrl: '',
+    tags: ['StoryProtocol', 'DataFoundation', 'Web3', 'IP', 'MPDAO', 'thecodecraX'],
+    eventUrl: 'https://www.instagram.com/p/DbZNzwuEjEa/',
     registrationUrl: '',
-    instagramUrl: 'https://instagram.com/thecodecrax',
-    collaborators: [],
-    speakers: [],
+    instagramPostUrl:
+      'https://www.instagram.com/p/DbZNzwuEjEa/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==',
+    audience: '70+ Protocol Engineers & Builders',
+    collaborators: [
+      { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
+      { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
+      { name: 'Data Foundation (Story)', handle: '@datafdn', url: 'https://x.com/datafdn' },
+    ],
     featured: true,
     published: true,
   },
   {
     id: 'event-003',
-    slug: 'ai-builders-session-2025',
-    title: 'AI Builders Session',
+    slug: 'vercel-v0-zero-to-agents-workshop-2025',
+    title: 'Vercel — v0 Zero to Agents Workshop 👾⚡',
     shortDescription:
-      'A focused session for developers interested in building with AI — from APIs to autonomous agents.',
+      'Hands-on technical workshop with @vercel exploring v0, prompt engineering, generative UI, and autonomous AI agents by @mpdao__ & co-host @thecodecrax.',
     description:
-      'The AI Builders Session brought together developers who want to build with AI rather than just talk about it. Topics included LLM APIs, prompt engineering, building autonomous agents, and practical AI integration in real projects.',
-    date: '2025-07-10',
+      'April with @vercel - v0 Zero to Agents Workshop, by @mpdao__ & co-host @thecodecrax 👾⚡. Participants experienced real-time generative UI prototyping, LLM tool-calling orchestration, and deployed full-stack autonomous AI agent apps on Vercel.',
+    date: '2025-04-18',
     location: {
-      city: 'Bhopal',
+      city: 'Bhopal / Jabalpur',
       state: 'Madhya Pradesh',
       country: 'India',
     },
-    category: ['AI', 'Workshop', 'Builders'],
+    category: ['AI', 'Vercel', 'AI Agents', 'Workshop'],
     coverImage: '/images/events/event-003/cover.jpg',
     gallery: [
       '/images/events/event-003/photo-1.jpg',
     ],
-    tags: ['AI', 'Builders', 'LLM', 'Agents', 'Bhopal'],
-    eventUrl: '',
+    tags: ['Vercel', 'v0', 'AI Agents', 'LLMs', 'Nextjs', 'thecodecraX', 'MPDAO'],
+    eventUrl: 'https://www.instagram.com/p/DbVHEWokquJ/',
     registrationUrl: '',
-    instagramUrl: 'https://instagram.com/thecodecrax',
-    collaborators: [],
-    speakers: [],
+    instagramPostUrl:
+      'https://www.instagram.com/p/DbVHEWokquJ/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==',
+    audience: '120+ AI Builders & Engineers',
+    collaborators: [
+      { name: 'Vercel', handle: '@vercel', url: 'https://vercel.com' },
+      { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
+      { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
+    ],
     featured: true,
+    published: true,
+  },
+  {
+    id: 'event-004',
+    slug: 'ai-agents-hands-on-hack-night',
+    title: 'Autonomous AI Agents & LLM Hack Night',
+    shortDescription:
+      'Deep dive into multi-agent systems, tool calling, and building production-ready AI applications.',
+    description:
+      'A hands-on build session where students and engineers learned how to structure agentic memory, prompt pipelines, and deploy serverless AI workflows directly to cloud environments.',
+    date: '2025-08-12',
+    location: {
+      city: 'Indore',
+      state: 'Madhya Pradesh',
+      country: 'India',
+    },
+    category: ['AI', 'Hack Night', 'LLMs'],
+    coverImage: '/images/events/event-004/cover.jpg',
+    gallery: [],
+    tags: ['AI', 'Agents', 'Indore', 'Hackathon'],
+    eventUrl: 'https://www.instagram.com/thecodecrax/?hl=en',
+    instagramPostUrl: 'https://www.instagram.com/thecodecrax/?hl=en',
+    audience: '60+ Developers',
+    collaborators: [
+      { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
+    ],
+    featured: false,
+    published: true,
+  },
+  {
+    id: 'event-005',
+    slug: 'smart-contract-security-dev-bootcamp',
+    title: 'Smart Contract Architecture & Security',
+    shortDescription:
+      'Foundational Solidity and smart contract engineering session for campus builders.',
+    description:
+      'Introducing aspiring developers to EVM internals, gas optimization techniques, reentrancy defense, and hands-on deployment with Hardhat and Foundry.',
+    date: '2025-06-25',
+    location: {
+      city: 'Jabalpur',
+      state: 'Madhya Pradesh',
+      country: 'India',
+    },
+    category: ['Web3', 'Solidity', 'Security'],
+    coverImage: '/images/events/event-005/cover.jpg',
+    gallery: [],
+    tags: ['Solidity', 'Web3', 'Security', 'EVM'],
+    eventUrl: 'https://www.instagram.com/thecodecrax/?hl=en',
+    instagramPostUrl: 'https://www.instagram.com/thecodecrax/?hl=en',
+    audience: '75+ Campus Engineers',
+    collaborators: [
+      { name: 'thecodecraX', handle: '@thecodecrax', url: 'https://instagram.com/thecodecrax' },
+      { name: 'MPDAO', handle: '@mpdao__', url: 'https://instagram.com/mpdao__' },
+    ],
+    featured: false,
     published: true,
   },
 ];
 
-// Helper: Get all published events
 export const getPublishedEvents = (): Event[] =>
   events.filter((e) => e.published);
 
-// Helper: Get featured events
-export const getFeaturedEvents = (max?: number): Event[] => {
-  const featured = events
-    .filter((e) => e.published && e.featured)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  return max ? featured.slice(0, max) : featured;
-};
+export const getFeaturedEvents = (): Event[] =>
+  events.filter((e) => e.published && e.featured);
 
-// Helper: Get event by slug
 export const getEventBySlug = (slug: string): Event | undefined =>
   events.find((e) => e.slug === slug && e.published);
 
-// Helper: Get all unique categories from published events
 export const getEventCategories = (): string[] => {
   const cats = new Set<string>();
   events

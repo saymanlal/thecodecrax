@@ -1,35 +1,40 @@
 import type { SocialLink } from '@/types';
 
+/**
+ * SOCIAL MEDIA CONFIGURATION
+ * ============================================================
+ * Edit handles and profile URLs here.
+ * Set enabled: true/false to show or hide from the website.
+ * ============================================================
+ */
 export const socialLinks: SocialLink[] = [
   {
     name: 'Instagram',
-    url: 'https://instagram.com/thecodecrax',
+    handle: '@thecodecrax',
+    url: 'https://www.instagram.com/thecodecrax/?hl=en',
     icon: 'instagram',
     enabled: true,
   },
   {
-    name: 'LinkedIn',
-    url: 'https://linkedin.com/company/thecodecrax',
-    icon: 'linkedin',
-    enabled: true,
-  },
-  {
-    name: 'X / Twitter',
+    name: 'X (Twitter)',
+    handle: '@thecodecrax',
     url: 'https://x.com/thecodecrax',
     icon: 'twitter',
     enabled: true,
   },
   {
-    name: 'Discord',
-    url: 'https://discord.gg/thecodecrax',
-    icon: 'discord',
+    name: 'LinkedIn',
+    handle: 'thecodecraX',
+    url: 'https://linkedin.com/company/thecodecrax',
+    icon: 'linkedin',
     enabled: true,
   },
   {
-    name: 'YouTube',
-    url: '',
-    icon: 'youtube',
-    enabled: false,
+    name: 'Discord',
+    handle: 'thecodecraX Community',
+    url: 'https://discord.gg/thecodecrax',
+    icon: 'discord',
+    enabled: true,
   },
 ];
 
