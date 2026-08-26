@@ -170,8 +170,10 @@ export const events: Event[] = [
 export const getPublishedEvents = (): Event[] =>
   events.filter((e) => e.published);
 
-export const getFeaturedEvents = (): Event[] =>
-  events.filter((e) => e.published && e.featured);
+export const getFeaturedEvents = (limit?: number): Event[] => {
+  const featured = events.filter((e) => e.published && e.featured);
+  return limit ? featured.slice(0, limit) : featured;
+};
 
 export const getEventBySlug = (slug: string): Event | undefined =>
   events.find((e) => e.slug === slug && e.published);

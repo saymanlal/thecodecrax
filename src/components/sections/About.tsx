@@ -7,7 +7,8 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { CheckCircle2 } from 'lucide-react';
 
 export function About() {
-  const { about } = siteConfig;
+  const about = siteConfig.about;
+  if (!about) return null;
 
   return (
     <section id="about" className="py-24 bg-white relative overflow-hidden">

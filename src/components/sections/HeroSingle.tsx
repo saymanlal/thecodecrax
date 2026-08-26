@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Instagram, Flame, Globe } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { siteConfig } from '@/data/site';
 import { getEnabledStats } from '@/data/stats';
 import { AnimatedCounter } from '@/components/ui/AnimatedCounter';

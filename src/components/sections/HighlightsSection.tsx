@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Users, ExternalLink, Instagram, Sparkles, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, Users, ExternalLink, Sparkles } from 'lucide-react';
 import { getFeaturedEvents } from '@/data/events';
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback';
-import { Badge } from '@/components/ui/Badge';
 import { SocialIcon } from '@/components/ui/SocialIcon';
 import { formatDate } from '@/lib/utils';
 

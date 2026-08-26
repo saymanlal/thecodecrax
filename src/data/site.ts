@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
   description:
     'thecodecraX is a builder-first tech community bringing Web3 protocols, AI models, hands-on workshops, and developer opportunities directly to cities and campuses across India.',
   
-  logo: '/images/logo/logo.jpg',
+  logo: '/logo.jpg',
 
   hero: {
     primaryCTA: {
